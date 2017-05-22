@@ -8,6 +8,7 @@
     <modules>
         <module>log-by-aop</module>
         <module>log-by-aop-custom-annotation</module>
+        <module>log-to-disk</module>
     </modules>
     <packaging>pom</packaging>
 	<name>log-parent</name>

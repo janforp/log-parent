@@ -1,8 +1,6 @@
 package com.janita.annotation.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * Created by Janita on 2017-05-22 13:53
@@ -12,5 +10,6 @@ import java.lang.annotation.Target;
  */
 @Documented
 @Target({ElementType.PARAMETER, ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
 public @interface ULog {
 }
