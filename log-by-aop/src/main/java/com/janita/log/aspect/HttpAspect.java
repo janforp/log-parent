@@ -62,4 +62,10 @@ public class HttpAspect {
     public void doAfterReturning(Object object) {
         logger.info("response={}", object);
     }
+
+    //异常时的日志
+    @AfterThrowing("log()")
+    public void doAfterException() {
+
+    }
 }
