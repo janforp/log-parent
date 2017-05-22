@@ -64,8 +64,8 @@ public class HttpAspect {
     }
 
     //异常时的日志
-    @AfterThrowing("log()")
-    public void doAfterException() {
-
+    @AfterThrowing(throwing = "e", pointcut = "log()")
+    public void doAfterException(Throwable e) {
+        logger.info("exception={}", e.getMessage());
     }
 }

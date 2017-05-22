@@ -71,4 +71,9 @@ public class UserController {
 
         return ResultUtil.success(age);
     }
+
+    @DeleteMapping
+    public Result throwEx () throws Exception {
+        throw new Exception("出错了");
+    }
 }
