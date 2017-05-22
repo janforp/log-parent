@@ -21,7 +21,7 @@
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>ERROR</level>
         </filter>
-        <File>${LOG_PATH}/error.log</File>
+        <!--<File>${LOG_PATH}/error.log</File>-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${LOG_PATH}/error-%d{yyyyMMdd}.log.%i
             </fileNamePattern>
@@ -36,15 +36,6 @@
             </Pattern>
         </layout>
     </appender>
-
-    <!-- hibernate日志输入 -->
-    <!-- <logger name="org.hibernate.type.descriptor.sql.BasicBinder"
-        level="TRACE" />
-    <logger name="org.hibernate.type.descriptor.sql.BasicExtractor"
-        level="TRACE" />
-    <logger name="org.hibernate.SQL" level="INFO" />
-    <logger name="org.hibernate.engine.QueryParameters" level="INFO" />
-    <logger name="org.hibernate.engine.query.HQLQueryPlan" level="INFO" /> -->
 
     <root level="INFO">
         <appender-ref ref="INFO_FILE" />

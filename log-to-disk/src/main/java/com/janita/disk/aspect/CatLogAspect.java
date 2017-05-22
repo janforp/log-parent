@@ -2,10 +2,7 @@ package com.janita.disk.aspect;
 
 import com.janita.disk.controller.CatController;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -54,8 +51,14 @@ public class CatLogAspect {
     }
 
     //打印出方法的返回值
-    @AfterReturning(returning = "object",pointcut = "logPointCut()")
-    public void doAfterReturning(Object object) {
-        logger.info("response={}", object);
+//    @AfterReturning(returning = "object",pointcut = "logPointCut()")
+//    public void doAfterReturning(Object object) {
+//        logger.info("response={}", object);
+//    }
+
+    //异常时的日志
+    @AfterThrowing(throwing = "e", pointcut = "logPointCut()")
+    public void doAfterException(Throwable e) {
+        logger.info("exception={}", e.getMessage());
     }
 }

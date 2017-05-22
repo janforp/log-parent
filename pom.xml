@@ -9,6 +9,7 @@
         <module>log-by-aop</module>
         <module>log-by-aop-custom-annotation</module>
         <module>log-to-disk</module>
+        <module>log4j-demo</module>
     </modules>
     <packaging>pom</packaging>
 	<name>log-parent</name>
