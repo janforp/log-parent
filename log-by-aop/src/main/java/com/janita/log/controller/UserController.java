@@ -43,16 +43,11 @@ public class UserController {
     @GetMapping("/{userId}")
     public Result getUserById(@PathVariable Long userId){
 
-        Result result = new Result();
-        result.setCode(1);
-        result.setMsg("成功");
         User user = new User();
         user.setUserId(userId);
         user.setUsername("张三");
         user.setAge(50);
 
-        result.setData(user);
-
-        return result;
+        return ResultUtil.success(user);
     }
 }
