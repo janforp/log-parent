@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by Janita on 2017-05-22 10:29
+ * User服务接口
  */
 @Aspect
 @Component
