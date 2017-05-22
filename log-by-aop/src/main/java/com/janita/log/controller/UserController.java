@@ -1,6 +1,8 @@
 package com.janita.log.controller;
 
 import com.janita.log.domain.User;
+import com.janita.log.result.Result;
+import com.janita.log.utils.ResultUtil;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -14,12 +16,13 @@ import java.util.List;
 public class UserController {
 
     @PostMapping
-    public User createUser(@RequestBody User user){
-        return user;
+    public Result createUser(@RequestBody User user){
+        return ResultUtil.success(user);
     }
 
     @GetMapping
-    public List<User> listUser(){
+    public Result listUser(){
+
         List<User> users = new ArrayList<>();
 
         User user1 = new User();
@@ -34,17 +37,22 @@ public class UserController {
         users.add(user1);
         users.add(user2);
 
-        return users;
+        return ResultUtil.success(users);
     }
 
     @GetMapping("/{userId}")
-    public User getUserById(@PathVariable Long userId){
+    public Result getUserById(@PathVariable Long userId){
 
+        Result result = new Result();
+        result.setCode(1);
+        result.setMsg("成功");
         User user = new User();
         user.setUserId(userId);
         user.setUsername("张三");
         user.setAge(50);
 
-        return user;
+        result.setData(user);
+
+        return result;
     }
 }
