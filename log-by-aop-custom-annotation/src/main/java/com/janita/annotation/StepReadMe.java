@@ -2,12 +2,13 @@ package com.janita.annotation;
 
 /**
  * Created by Janita on 2017-05-22 13:51
+ *
+ * 只对有自定义注解的类进行AOP操作
+ * 步骤
  */
 public class StepReadMe {
 
     /**
-     * 1.只对有自定义注解的类进行AOP操作
-     *
      * 2.<artifactId>spring-boot-starter-aop</artifactId>
      *
      * 3.自定义注解

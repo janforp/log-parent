@@ -1,5 +1,6 @@
 package com.janita.annotation.service;
 
+import com.janita.annotation.annotation.ULog;
 import com.janita.annotation.bean.Dog;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class DogService {
 
+    @ULog
     public Dog getDogByName(String name) {
 
         Dog dog = new Dog();
