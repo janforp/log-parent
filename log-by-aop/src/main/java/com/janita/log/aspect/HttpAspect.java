@@ -30,8 +30,10 @@ public class HttpAspect {
    //方法执行之前打印日志
     @Before("log()")
     public void logBefore(JoinPoint joinPoint) {
+
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
+
         //url
         logger.info("url={}", request.getRequestURL());
 

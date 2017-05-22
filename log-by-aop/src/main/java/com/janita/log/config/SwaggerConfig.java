@@ -15,6 +15,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @author Janita
  * create on 2017/3/4
  * 使用swagger来管理restful接口文档
+ *
+ * http://localhost:9001/swagger-ui.html
  */
 @Configuration
 @EnableSwagger2
