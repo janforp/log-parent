@@ -1,6 +1,7 @@
 package com.janita.log.controller;
 
 import com.janita.log.domain.User;
+import com.janita.log.enums.ResultEnum;
 import com.janita.log.exception.UserException;
 import com.janita.log.result.Result;
 import com.janita.log.utils.ResultUtil;
@@ -57,15 +58,15 @@ public class UserController {
         Integer age = new Random().nextInt(20);
 
         if (age < 10) {
-            throw new UserException(101,"你还在上小学吧");
+            throw new UserException(ResultEnum.PRIMARY_SCHOOL);
         }
 
         if (age < 16) {
-            throw new UserException(102, "你还在上初中吧");
+            throw new UserException(ResultEnum.MIDDLE_SCHOOL);
         }
 
         if (age > 18) {
-            throw new UserException(103, "加工资");
+            throw new UserException(ResultEnum.RAISE_SALARY);
         }
 
         return ResultUtil.success(age);

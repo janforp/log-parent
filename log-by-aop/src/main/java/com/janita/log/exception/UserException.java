@@ -1,5 +1,6 @@
 package com.janita.log.exception;
 
+import com.janita.log.enums.ResultEnum;
 import lombok.Data;
 
 /**
@@ -13,5 +14,10 @@ public class UserException extends RuntimeException {
     public UserException(Integer code, String message) {
         super(message);
         this.code = code;
+    }
+
+    public UserException(ResultEnum resultEnum) {
+        super(resultEnum.getMsg());
+        this.code = resultEnum.getCode();
     }
 }

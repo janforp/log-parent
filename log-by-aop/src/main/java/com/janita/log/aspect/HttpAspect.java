@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by Janita on 2017-05-22 10:29
- * User服务接口
  */
 @Aspect
 @Component
@@ -23,15 +22,15 @@ public class HttpAspect {
 
     //指定切点
     @Pointcut("execution(public * com.janita.log.controller.*.*(..))")
-    public void log() {
-
-    }
+    public void log() {}
 
    //方法执行之前打印日志
     @Before("log()")
     public void logBefore(JoinPoint joinPoint) {
 
-        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        ServletRequestAttributes attributes =
+                (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+
         HttpServletRequest request = attributes.getRequest();
 
         //url
@@ -44,7 +43,8 @@ public class HttpAspect {
         logger.info("ip={}", request.getRemoteAddr());
 
         //类方法
-        logger.info("class_method={}", joinPoint.getSignature().getDeclaringTypeName()
+        logger.info("class_method={}",
+                joinPoint.getSignature().getDeclaringTypeName()
                 + "." + joinPoint.getSignature().getName());
 
         //方法参数
