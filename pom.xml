@@ -7,6 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>log-by-aop</module>
+        <module>log-by-aop-custom-annotation</module>
     </modules>
     <packaging>pom</packaging>
 	<name>log-parent</name>
