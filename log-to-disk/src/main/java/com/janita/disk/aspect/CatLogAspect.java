@@ -1,6 +1,5 @@
 package com.janita.disk.aspect;
 
-import com.janita.disk.controller.CatController;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
