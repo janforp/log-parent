@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="log-by-aop" />
+        <module name="log-by-aop-custom-annotation" />
+        <module name="log-to-disk" />
+        <module name="log4j-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="log-by-aop" target="1.8" />
+      <module name="log-by-aop-custom-annotation" target="1.8" />
+      <module name="log-parent" target="1.8" />
+      <module name="log-to-disk" target="1.8" />
+      <module name="log4j-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

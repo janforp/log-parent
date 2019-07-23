@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log-by-aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log-by-aop-custom-annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log-to-disk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log4j-demo" charset="UTF-8" />
+  </component>
+</project>

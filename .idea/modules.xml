@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/log-by-aop/log-by-aop.iml" filepath="$PROJECT_DIR$/log-by-aop/log-by-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log-by-aop-custom-annotation/log-by-aop-custom-annotation.iml" filepath="$PROJECT_DIR$/log-by-aop-custom-annotation/log-by-aop-custom-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/log-parent.iml" filepath="$PROJECT_DIR$/.idea/log-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log-to-disk/log-to-disk.iml" filepath="$PROJECT_DIR$/log-to-disk/log-to-disk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log4j-demo/log4j-demo.iml" filepath="$PROJECT_DIR$/log4j-demo/log4j-demo.iml" />
+    </modules>
+  </component>
+</project>
