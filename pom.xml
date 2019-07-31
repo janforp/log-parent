@@ -10,6 +10,7 @@
         <module>log-by-aop-custom-annotation</module>
         <module>log-to-disk</module>
         <module>log4j-demo</module>
+        <module>ali-trace-parent</module>
     </modules>
     <packaging>pom</packaging>
 	<name>log-parent</name>
